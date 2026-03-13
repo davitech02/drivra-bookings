@@ -1,0 +1,56 @@
+export const adminStats = {
+  totalProperties: 24,
+  totalBookings: 187,
+  registeredUsers: 342,
+  siteVisitors: 12847,
+  totalRevenue: 284650,
+  monthlyRevenue: 45230,
+};
+
+export const recentBookings = [
+  {
+    id: 'BK-2025-001',
+    propertyName: 'Luxury Penthouse in Sandton',
+    guestName: 'Sarah Johnson',
+    checkIn: '2025-05-15',
+    checkOut: '2025-05-20',
+    amount: 12500,
+    status: 'confirmed',
+  },
+  {
+    id: 'BK-2025-002',
+    propertyName: 'Beachfront Villa in Camps Bay',
+    guestName: 'Michael Chen',
+    checkIn: '2025-05-18',
+    checkOut: '2025-05-25',
+    amount: 28000,
+    status: 'pending',
+  },
+  {
+    id: 'BK-2025-003',
+    propertyName: 'Modern Loft in Braamfontein',
+    guestName: 'Emma Williams',
+    checkIn: '2025-05-12',
+    checkOut: '2025-05-14',
+    amount: 4800,
+    status: 'confirmed',
+  },
+  {
+    id: 'BK-2025-004',
+    propertyName: 'Garden Cottage in Constantia',
+    guestName: 'David Brown',
+    checkIn: '2025-05-20',
+    checkOut: '2025-05-27',
+    amount: 15400,
+    status: 'confirmed',
+  },
+  {
+    id: 'BK-2025-005',
+    propertyName: 'City View Apartment in Rosebank',
+    guestName: 'Lisa Anderson',
+    checkIn: '2025-05-10',
+    checkOut: '2025-05-13',
+    amount: 6900,
+    status: 'completed',
+  },
+];
