@@ -17,7 +17,12 @@ app.config['JWT_ACCESS_TOKEN_EXPIRES'] = False
 
 db.init_app(app)
 jwt = JWTManager(app)
-CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=True)
+CORS(app, origins=[
+    "http://localhost:3000",
+    "https://drivra-booking.vercel.app",
+    "https://drivrabooking.com",        # <--- New Domain
+    "https://www.drivrabooking.com"    # <--- New Domain with WWW
+], supports_credentials=True)
 
 # Register Blueprints
 from routes.auth import auth_bp
