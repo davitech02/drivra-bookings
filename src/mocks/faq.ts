@@ -29,7 +29,7 @@ export const faqItems: FaqItem[] = [
     id: 'b4',
     category: 'bookings',
     question: 'Can I modify my booking dates after confirming?',
-    answer: 'Modification requests must be submitted before the check-in date and are subject to property availability. Please contact our support team at support@drivrabookings.com with your booking reference number to request a date change.',
+    answer: 'Modification requests must be submitted before the check-in date and are subject to property availability. Please contact our support team at support@drivrabooking.com with your booking reference number to request a date change.',
   },
   {
     id: 'b5',
@@ -99,7 +99,7 @@ export const faqItems: FaqItem[] = [
     id: 'c1',
     category: 'cancellations',
     question: 'How do I cancel my booking?',
-    answer: 'To cancel a booking, log into your account, go to "My Bookings", select the booking you wish to cancel, and click "Cancel Booking". Alternatively, contact our support team at support@drivrabookings.com with your booking reference number.',
+    answer: 'To cancel a booking, log into your account, go to "My Bookings", select the booking you wish to cancel, and click "Cancel Booking". Alternatively, contact our support team at support@drivrabooking.com with your booking reference number.',
   },
   {
     id: 'c2',
@@ -173,7 +173,7 @@ export const faqItems: FaqItem[] = [
     id: 'a6',
     category: 'account',
     question: 'How do I delete my account?',
-    answer: 'To request account deletion, please contact our support team at support@drivrabookings.com. Note that deleting your account will permanently remove all your booking history and personal data from our platform.',
+    answer: 'To request account deletion, please contact our support team at support@drivrabooking.com. Note that deleting your account will permanently remove all your booking history and personal data from our platform.',
   },
   {
     id: 'a7',

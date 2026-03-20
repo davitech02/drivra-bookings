@@ -51,7 +51,7 @@ export default function AdminLoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-              placeholder="admin@example.com"
+              placeholder="info@drivrabooking.com"
             />
           </div>
 

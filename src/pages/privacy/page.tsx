@@ -47,7 +47,7 @@ export default function PrivacyPage() {
     {
       id: 'contact',
       title: '8. Contact',
-      content: 'For any privacy-related questions, contact: Email: support@drivrabookings.com',
+      content: 'For any privacy-related questions, contact: Email: support@drivrabooking.com',
     },
   ];
 

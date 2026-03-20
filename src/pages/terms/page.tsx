@@ -52,7 +52,7 @@ export default function TermsPage() {
     {
       id: 'contact',
       title: '9. Contact Information',
-      content: 'If you have any questions regarding these terms, please contact us at: Email: support@drivrabookings.com | Address: 58 Oxpecker Crescent, Crystal Park, Benoni, Gauteng, South Africa',
+      content: 'If you have any questions regarding these terms, please contact us at: Email: support@drivrabooking.com | Address: 58 Oxpecker Crescent, Crystal Park, Benoni, Gauteng, South Africa',
     },
   ];
 

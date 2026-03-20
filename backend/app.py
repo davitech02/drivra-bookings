@@ -31,6 +31,7 @@ from routes.bookings import bookings_bp
 from routes.payments import payments_bp
 from routes.admin import admin_bp
 from routes.analytics import analytics_bp
+from routes.contact import contact_bp
 
 app.register_blueprint(auth_bp, url_prefix='/api/auth')
 app.register_blueprint(properties_bp, url_prefix='/api/properties')
@@ -38,6 +39,7 @@ app.register_blueprint(bookings_bp, url_prefix='/api/bookings')
 app.register_blueprint(payments_bp, url_prefix='/api/payments')
 app.register_blueprint(admin_bp, url_prefix='/api/admin')
 app.register_blueprint(analytics_bp, url_prefix='/api/analytics')
+app.register_blueprint(contact_bp, url_prefix='/api/contact')
 
 with app.app_context():
     try:

@@ -47,7 +47,7 @@ export default function RefundPolicyPage() {
     {
       id: 'support',
       title: '8. Contact for Support',
-      content: 'For cancellation or refund assistance, please contact: Email: support@drivrabookings.com',
+      content: 'For cancellation or refund assistance, please contact: Email: support@drivrabooking.com',
     },
   ];
 

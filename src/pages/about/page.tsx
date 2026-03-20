@@ -170,7 +170,7 @@ export default function AboutPage() {
             {[
               { icon: 'ri-building-2-line', label: 'Company Name', value: 'Drivra Bookings (Pty) Ltd' },
               { icon: 'ri-global-line', label: 'Website', value: 'drivrabookings.com' },
-              { icon: 'ri-mail-line', label: 'Email', value: 'support@drivrabookings.com' },
+              { icon: 'ri-mail-line', label: 'Email', value: 'support@drivrabooking.com' },
               { icon: 'ri-map-pin-line', label: 'Address', value: '58 Oxpecker Crescent, Crystal Park, Benoni, Gauteng, South Africa' },
             ].map((item) => (
               <div key={item.label} className="bg-white rounded-2xl shadow-sm p-6 flex flex-col gap-3 hover:shadow-md transition-shadow">

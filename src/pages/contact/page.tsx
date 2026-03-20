@@ -20,23 +20,34 @@ export default function ContactPage() {
     if (messageField && messageField.value.length > 500) return;
 
     setSubmitting(true);
-    const formData = new FormData(form);
-    const params = new URLSearchParams();
-    formData.forEach((value, key) => {
-      params.append(key, value.toString());
-    });
+    const payload = {
+      first_name: (form.querySelector('input[name="first_name"]') as HTMLInputElement)?.value || '',
+      last_name: (form.querySelector('input[name="last_name"]') as HTMLInputElement)?.value || '',
+      email: (form.querySelector('input[name="email"]') as HTMLInputElement)?.value || '',
+      phone: (form.querySelector('input[name="phone"]') as HTMLInputElement)?.value || '',
+      subject: (form.querySelector('select[name="subject"]') as HTMLSelectElement)?.value || 'General Inquiry',
+      message: messageField?.value || '',
+    };
 
     try {
-      await fetch('https://readdy.ai/api/form/d6kqc0lv117fnkj2gg20', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: params.toString(),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
       });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
       setSubmitted(true);
       form.reset();
       setCharCount(0);
-    } catch {
-      // silent
+    } catch (error) {
+      console.error('Contact form submission failed', error);
+      alert('Could not send message. Please try again later.');
     } finally {
       setSubmitting(false);
     }
@@ -45,17 +56,24 @@ export default function ContactPage() {
   const contactInfo = [
     {
       icon: 'ri-mail-send-line',
-      title: 'Email Support',
-      value: 'support@drivrabookings.com',
+      title: 'Primary Email',
+      value: 'info@drivrabooking.com',
+      sub: 'General enquiries',
+      href: 'mailto:info@drivrabooking.com',
+    },
+    {
+      icon: 'ri-mail-send-line',
+      title: 'Support Email',
+      value: 'support@drivrabooking.com',
       sub: 'We reply within 24 hours',
-      href: 'mailto:support@drivrabookings.com',
+      href: 'mailto:support@drivrabooking.com',
     },
     {
       icon: 'ri-phone-line',
       title: 'Phone Number',
-      value: '+27 11 000 0000',
+      value: '+27683609613',
       sub: 'Mon–Fri, 8am–6pm SAST',
-      href: 'tel:+27110000000',
+      href: 'tel:+27683609613',
     },
     {
       icon: 'ri-map-pin-2-line',
@@ -226,7 +244,7 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       name="phone"
-                      placeholder="+27 11 000 0000"
+                      placeholder="+27683609613"
                       className="w-full px-4 py-3 border border-[#DDDDDD] rounded-xl text-sm text-[#222222] placeholder-[#B0B0B0] focus:outline-none focus:border-[#FF385C] transition-colors"
                     />
                   </div>

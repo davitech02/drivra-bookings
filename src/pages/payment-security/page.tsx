@@ -42,7 +42,7 @@ export default function PaymentSecurityPage() {
     {
       id: 'disputes',
       title: '7. Payment Disputes',
-      content: 'If you notice any unauthorized charges or have concerns about a payment, please contact our support team immediately at support@drivrabookings.com. We will investigate and resolve the issue promptly.',
+      content: 'If you notice any unauthorized charges or have concerns about a payment, please contact our support team immediately at support@drivrabooking.com. We will investigate and resolve the issue promptly.',
     },
     {
       id: 'compliance',

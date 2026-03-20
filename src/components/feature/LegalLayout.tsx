@@ -159,11 +159,11 @@ export default function LegalLayout({ title, lastUpdated, description, sections 
                       If you have any questions or concerns about this policy, please don't hesitate to reach out to our support team.
                     </p>
                     <a
-                      href="mailto:support@drivrabookings.com"
+                      href="mailto:support@drivrabooking.com"
                       className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF385C] hover:underline cursor-pointer"
                     >
                       <i className="ri-mail-line"></i>
-                      support@drivrabookings.com
+                      support@drivrabooking.com
                     </a>
                   </div>
                 </div>
